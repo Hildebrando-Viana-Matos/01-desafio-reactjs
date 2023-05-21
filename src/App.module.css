@@ -1,0 +1,115 @@
+.container {
+  width: min(90%, 736px);
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 4.5rem;
+  text-align: center;
+}
+
+header img {
+  width: 7.875rem;
+}
+
+header form {
+  margin-top: 3.3125rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+header form input {
+  flex: 1;
+
+  padding: 1rem;
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  color: var(--gray-100);
+
+  border-radius: 0.5rem;
+}
+
+header form input:focus {
+  outline: 1px solid var(--purple-dark);
+}
+
+header form button {
+  background-color: var(--blue-dark);
+  padding: 1.125rem 1rem;
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  color: var(--gray-100);
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  border: none;
+  border-radius: 0.5rem;
+
+  transition: background-color 200ms;
+}
+
+header form button:hover {
+  background-color: var(--blue);
+}
+
+main {
+  margin-top: 4rem;
+}
+
+.aboutTasks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.5rem;
+}
+
+.createdTasks,
+.completedTasks {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.createdTasks h2,
+.completedTasks h2 {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.createdTasks h2 {
+  color: var(--blue);
+}
+
+.completedTasks h2 {
+  color: var(--purple);
+}
+
+.createdTasks span,
+.completedTasks span {
+  background-color: var(--gray-400);
+  font-size: 0.75rem;
+  font-weight: bold;
+
+  padding: 0.125rem 0.5rem;
+  border-radius: 1rem;
+}
+
+.withoutTasks {
+  border-top: 1px solid #333333;
+
+  padding: 4rem 0;
+  text-align: center;
+  color: var(--gray-300);
+}
+
+.withoutTasks img {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,86 @@
+.content {
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.875rem;
+}
+
+.check {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  border: 1px solid var(--blue);
+  border-radius: 1rem;
+
+  background-color: transparent;
+
+  transition: border 200ms;
+}
+
+.check:hover {
+  border: 1px solid var(--blue-dark);
+}
+
+.checked {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  border-radius: 1rem;
+
+  background-color: var(--purple-dark);
+  border: 1px solid var(--purple-dark);
+  color: var(--gray-100);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 200ms, border 200ms;
+}
+
+.checked:hover {
+  background-color: var(--purple);
+  border: 1px solid var(--purple);
+}
+
+.title {
+  flex: 1;
+  font-size: 0.87rem;
+  font-weight: 400;
+}
+
+.titleCompleted {
+  flex: 1;
+  font-size: 0.87rem;
+  font-weight: 400;
+  color: var(--gray-300);
+  text-decoration-line: line-through;
+}
+
+.deleteTask {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  background: transparent;
+  color: var(--gray-300);
+
+  border-radius: 0.25rem;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background 200ms, color 200ms;
+}
+
+.deleteTask:hover {
+  background: var(--gray-400);
+  color: var(--danger);
+}
